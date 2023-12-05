@@ -155,6 +155,14 @@ class Transaction
     }
 
     /**
+     * @return Carbon
+     */
+    public function getPostingDate(): Carbon
+    {
+        return $this->extra->getPostingDate;
+    }
+
+    /**
      * @return string
      */
     public function getMode(): string

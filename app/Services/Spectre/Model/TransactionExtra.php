@@ -161,6 +161,14 @@ class TransactionExtra
     }
 
     /**
+     * @return Carbon
+     */
+    public function getPostingDate(): Carbon
+    {
+        return $this->postingDate;
+    }
+
+    /**
      * @return array
      */
     public function toArray(): array
