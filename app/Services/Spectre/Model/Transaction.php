@@ -159,7 +159,7 @@ class Transaction
      */
     public function getPostingDate(): Carbon
     {
-        return $this->extra->getPostingDate;
+        return $this->extra->getPostingDate();
     }
 
     /**
