@@ -112,8 +112,8 @@ class GenerateTransactions
             'type'              => 'withdrawal', // reverse
             'date'              => str_replace('T', ' ', substr($madeOn, 0, 19)),
             'datetime'          => $madeOn, // not used in API, only for transaction filtering.
-            'posting_date'      => str_replace('T', ' ', substr($postingDate, 0, 19)),
-            'journal_order'     => 1,
+            'process_date'      => str_replace('T', ' ', substr($postingDate, 0, 19)),
+            // 'journal_order'     => 1,
             'amount'            => 0,
             'description'       => $description,
             'order'             => 0,
